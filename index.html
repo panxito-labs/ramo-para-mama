@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbe9e4">
+  <title>Feliz Día del Profe 💐</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Pétalos que caen suavemente de fondo -->
+  <div class="petalos" id="petalos" aria-hidden="true"></div>
+
+  <header class="encabezado">
+    <h1 id="titulo">Para Mamá</h1>
+    <p id="subtitulo">Un ramo de flores y tres cartas para la mejor profe 💐</p>
+  </header>
+
+  <main class="escena">
+    <div class="ramo">
+      <!-- El ramo de flores (dibujado a mano en SVG) -->
+      <svg class="svg-ramo" viewBox="0 0 640 720" role="img" aria-label="Un ramo de flores envuelto en papel kraft con lazo rojo">
+        <defs>
+          <linearGradient id="papel" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#eccaab"/>
+            <stop offset="1" stop-color="#dcb187"/>
+          </linearGradient>
+          <linearGradient id="papelFrente" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f3d9ba"/>
+            <stop offset="1" stop-color="#e0b78f"/>
+          </linearGradient>
+          <radialGradient id="brilloFlor" cx="0.35" cy="0.3" r="0.8">
+            <stop offset="0" stop-color="#fff" stop-opacity="0.35"/>
+            <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+          </radialGradient>
+
+          <!-- Rosa estilizada -->
+          <g id="rosa">
+            <g fill="currentColor">
+              <ellipse cx="0" cy="-30" rx="26" ry="30"/>
+              <ellipse cx="0" cy="-30" rx="26" ry="30" transform="rotate(72)"/>
+              <ellipse cx="0" cy="-30" rx="26" ry="30" transform="rotate(144)"/>
+              <ellipse cx="0" cy="-30" rx="26" ry="30" transform="rotate(216)"/>
+              <ellipse cx="0" cy="-30" rx="26" ry="30" transform="rotate(288)"/>
+            </g>
+            <g fill="currentColor" opacity="0.88">
+              <ellipse cx="0" cy="-18" rx="20" ry="22" transform="rotate(36)"/>
+              <ellipse cx="0" cy="-18" rx="20" ry="22" transform="rotate(108)"/>
+              <ellipse cx="0" cy="-18" rx="20" ry="22" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-18" rx="20" ry="22" transform="rotate(252)"/>
+              <ellipse cx="0" cy="-18" rx="20" ry="22" transform="rotate(324)"/>
+            </g>
+            <circle r="17" fill="currentColor" opacity="0.82"/>
+            <path d="M0 -11 A 11 11 0 1 1 -8 8" fill="none" stroke="#000" stroke-opacity="0.18" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M0 -5 A 5.5 5.5 0 1 1 -4 4" fill="none" stroke="#000" stroke-opacity="0.14" stroke-width="3" stroke-linecap="round"/>
+            <circle r="50" fill="url(#brilloFlor)"/>
+          </g>
+
+          <!-- Margarita -->
+          <g id="margarita">
+            <g fill="#ffffff" stroke="#e8d5b5" stroke-width="1">
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(30)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(60)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(90)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(120)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(150)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(180)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(210)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(240)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(270)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(300)"/>
+              <ellipse cx="0" cy="-24" rx="7.5" ry="20" transform="rotate(330)"/>
+            </g>
+            <circle r="12" fill="#f4c445"/>
+            <circle cx="0" cy="-4" r="2" fill="#d99b26"/>
+            <circle cx="4" cy="3" r="2" fill="#d99b26"/>
+            <circle cx="-4" cy="3" r="2" fill="#d99b26"/>
+          </g>
+
+          <!-- Florecita chica de 5 pétalos -->
+          <g id="florecita">
+            <g fill="currentColor">
+              <circle cx="0" cy="-11" r="8"/>
+              <circle cx="0" cy="-11" r="8" transform="rotate(72)"/>
+              <circle cx="0" cy="-11" r="8" transform="rotate(144)"/>
+              <circle cx="0" cy="-11" r="8" transform="rotate(216)"/>
+              <circle cx="0" cy="-11" r="8" transform="rotate(288)"/>
+            </g>
+            <circle r="6" fill="#f7d24f"/>
+            <circle r="2.6" fill="#e0ac2e"/>
+          </g>
+
+          <!-- Hoja -->
+          <g id="hoja">
+            <path d="M0 0 C 14 -20 40 -28 58 -22 C 52 -2 28 12 0 0 Z" fill="#57904f"/>
+            <path d="M2 -1 C 20 -8 40 -14 54 -18" stroke="#3f7138" stroke-width="2" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- Espiga verde -->
+          <g id="espiga">
+            <path d="M0 0 C -2 -24 -4 -46 -6 -66" stroke="#6aa063" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <ellipse cx="-8" cy="-14" rx="5" ry="9" transform="rotate(-24 -8 -14)" fill="#7bb06f"/>
+            <ellipse cx="6" cy="-22" rx="5" ry="9" transform="rotate(24 6 -22)" fill="#6aa063"/>
+            <ellipse cx="-9" cy="-34" rx="5" ry="9" transform="rotate(-24 -9 -34)" fill="#6aa063"/>
+            <ellipse cx="5" cy="-44" rx="5" ry="9" transform="rotate(24 5 -44)" fill="#7bb06f"/>
+            <ellipse cx="-8" cy="-54" rx="4.5" ry="8" transform="rotate(-24 -8 -54)" fill="#7bb06f"/>
+            <ellipse cx="-7" cy="-66" rx="4" ry="7" fill="#8cc07c"/>
+          </g>
+        </defs>
+
+        <!-- Sombra bajo el ramo -->
+        <ellipse cx="320" cy="692" rx="170" ry="22" fill="#7a4a2c" opacity="0.12"/>
+
+        <!-- Tallos (todos nacen del mismo punto, oculto detrás del papel) -->
+        <g stroke="#5b8f55" stroke-width="6" fill="none" stroke-linecap="round">
+          <path d="M320 378 C 302 322 268 264 252 214"/>
+          <path d="M320 378 C 344 318 380 254 396 196"/>
+          <path d="M320 378 C 320 342 321 296 322 264"/>
+          <path d="M320 378 C 282 348 218 306 182 268"/>
+          <path d="M320 378 C 360 344 424 302 452 264"/>
+          <path d="M320 378 C 374 322 456 250 502 196"/>
+          <path d="M320 378 C 308 300 284 208 272 136"/>
+          <path d="M320 378 C 326 292 338 188 342 110"/>
+          <path d="M320 378 C 346 292 390 200 406 134"/>
+          <path d="M320 378 C 264 338 182 268 144 210"/>
+          <path d="M320 378 C 386 302 478 222 524 146"/>
+          <path d="M320 378 C 270 352 198 314 138 282"/>
+          <path d="M320 378 C 262 346 178 302 114 250"/>
+          <path d="M320 378 C 372 350 452 316 508 286"/>
+          <path d="M320 378 C 380 344 472 302 534 258"/>
+          <path d="M320 378 C 288 340 220 300 168 278"/>
+          <path d="M320 378 C 356 340 424 302 476 276"/>
+          <path d="M320 378 C 300 320 256 274 238 242"/>
+          <path d="M320 378 C 340 318 396 274 424 240"/>
+          <path d="M320 378 C 300 320 240 250 204 176"/>
+          <path d="M320 378 C 316 300 306 220 304 174"/>
+          <path d="M320 378 C 350 310 420 230 462 172"/>
+          <path d="M320 378 C 280 340 200 290 162 232"/>
+          <path d="M320 378 C 370 340 450 280 486 224"/>
+          <path d="M320 378 C 312 350 300 310 296 292"/>
+        </g>
+
+        <!-- Hojas apoyadas en los tallos -->
+        <g>
+          <use href="#hoja" transform="translate(292 298) rotate(200)"/>
+          <use href="#hoja" transform="translate(362 288) rotate(-20)"/>
+          <use href="#hoja" transform="translate(248 318) rotate(195)"/>
+          <use href="#hoja" transform="translate(398 312) rotate(-15)"/>
+          <use href="#hoja" transform="translate(297 262) rotate(205) scale(0.7)"/>
+          <use href="#hoja" transform="translate(367 246) rotate(-18) scale(0.65)"/>
+          <use href="#hoja" transform="translate(232 302) rotate(198) scale(0.75)"/>
+          <use href="#hoja" transform="translate(443 262) rotate(-16) scale(0.75)"/>
+          <use href="#hoja" transform="translate(205 300) rotate(192) scale(0.7)"/>
+          <use href="#hoja" transform="translate(432 300) rotate(-14) scale(0.7)"/>
+        </g>
+
+        <!-- Flores -->
+        <g transform="translate(252 208) scale(1.2)"><use href="#rosa" class="flor d1" style="color:#e0576f"/></g>
+        <g transform="translate(396 190) scale(1.05)"><use href="#rosa" class="flor d2" style="color:#c9415c"/></g>
+        <g transform="translate(322 258) scale(0.9)"><use href="#rosa" class="flor d3" style="color:#f0899f"/></g>
+        <g transform="translate(178 262) scale(1)"><use href="#margarita" class="flor d4"/></g>
+        <g transform="translate(456 258) scale(0.95)"><use href="#margarita" class="flor d5"/></g>
+        <g transform="translate(505 190) scale(0.7)"><use href="#margarita" class="flor d6"/></g>
+        <g transform="translate(132 278) scale(0.8)"><use href="#margarita" class="flor d12"/></g>
+        <g transform="translate(516 282) scale(0.75)"><use href="#margarita" class="flor d13"/></g>
+        <g transform="translate(272 128) scale(0.9)"><use href="#florecita" class="flor d7" style="color:#b8a4e3"/></g>
+        <g transform="translate(342 102) scale(0.8)"><use href="#florecita" class="flor d8" style="color:#ef8a6b"/></g>
+        <g transform="translate(408 126) scale(0.85)"><use href="#florecita" class="flor d9" style="color:#c3b1ea"/></g>
+        <g transform="translate(138 202) scale(0.9)"><use href="#florecita" class="flor d10" style="color:#f0a892"/></g>
+        <g transform="translate(527 138) scale(0.75)"><use href="#florecita" class="flor d11" style="color:#b8a4e3"/></g>
+        <g transform="translate(108 244) scale(0.8)"><use href="#florecita" class="flor d14" style="color:#ee7f6b"/></g>
+        <g transform="translate(546 250) scale(0.75)"><use href="#florecita" class="flor d15" style="color:#ef9bb0"/></g>
+        <g transform="translate(168 276) scale(0.85)"><use href="#margarita" class="flor d16"/></g>
+        <g transform="translate(476 274) scale(0.8)"><use href="#margarita" class="flor d17"/></g>
+        <g transform="translate(238 240) scale(0.85)"><use href="#florecita" class="flor d18" style="color:#f2a9a0"/></g>
+        <g transform="translate(424 238) scale(0.8)"><use href="#florecita" class="flor d19" style="color:#b8a4e3"/></g>
+        <g transform="translate(200 168) scale(0.85)"><use href="#rosa" class="flor d20" style="color:#ef7a95"/></g>
+        <g transform="translate(304 166) scale(0.75)"><use href="#florecita" class="flor d21" style="color:#f0a0b4"/></g>
+        <g transform="translate(468 164) scale(0.85)"><use href="#margarita" class="flor d22"/></g>
+        <g transform="translate(160 232) scale(0.85)"><use href="#margarita" class="flor d23"/></g>
+        <g transform="translate(486 222) scale(0.8)"><use href="#margarita" class="flor d24"/></g>
+        <g transform="translate(296 288) scale(0.8)"><use href="#margarita" class="flor d25"/></g>
+
+        <!-- Envoltorio de papel kraft -->
+        <g>
+          <path fill="url(#papel)" d="M110 296 C 150 470 240 620 320 668 C 400 620 490 470 530 296 Z"/>
+          <path fill="#d3a478" d="M112 298 L 66 352 L 168 336 Z"/>
+          <path fill="#d3a478" d="M528 298 L 574 352 L 472 336 Z"/>
+          <path fill="url(#papelFrente)" d="M156 322 C 190 470 262 606 320 652 C 378 606 450 470 484 322 Z"/>
+          <g stroke="#c1946a" stroke-width="3" opacity="0.4" fill="none">
+            <path d="M320 652 L 252 350"/>
+            <path d="M320 652 L 388 350"/>
+            <path d="M168 340 C 220 352 280 358 320 358 C 360 358 420 352 472 340"/>
+          </g>
+        </g>
+
+        <!-- Lazo rojo -->
+        <g>
+          <path fill="#d95d6f" d="M168 402 C 240 424 400 424 472 402 L 486 442 C 400 466 240 466 154 442 Z"/>
+          <path fill="#e4707f" d="M320 430 C 280 396 232 400 240 428 C 246 450 296 448 320 434 Z"/>
+          <path fill="#e4707f" d="M320 430 C 360 396 408 400 400 428 C 394 450 344 448 320 434 Z"/>
+          <path fill="#c74f61" d="M314 442 C 306 478 288 502 266 524 C 280 508 296 494 306 466 Z"/>
+          <path fill="#c74f61" d="M326 442 C 334 478 352 502 374 524 C 360 508 344 494 334 466 Z"/>
+          <ellipse cx="320" cy="432" rx="14" ry="11" fill="#b8455a"/>
+        </g>
+
+        <!-- Colgante "Para Mamá" -->
+        <g transform="rotate(-5 320 552)">
+          <path d="M308 448 L 296 528 M332 448 L 344 528" stroke="#b98d5e" stroke-width="3" stroke-linecap="round"/>
+          <rect x="244" y="524" width="152" height="56" rx="8" fill="#fffaf0" stroke="#d9b38c" stroke-width="2"/>
+          <circle cx="320" cy="524" r="0" fill="none"/>
+          <text x="320" y="564" text-anchor="middle" font-family="'Caveat', cursive" font-size="34" font-weight="700" fill="#b0523f">Para Mamá</text>
+        </g>
+      </svg>
+
+      <!-- Acá se colocan los sobres con las cartas (los genera JavaScript) -->
+      <div class="sobres" id="sobres"></div>
+    </div>
+
+    <p class="indicacion">Tocá cada sobre para abrir tu carta 💛</p>
+  </main>
+
+  <footer class="pie" id="pie"></footer>
+
+  <!-- Carta abierta -->
+  <div class="fondo-carta" id="fondo-carta" hidden>
+    <article class="carta" role="dialog" aria-modal="true" aria-labelledby="carta-titulo">
+      <button class="cerrar" id="cerrar" aria-label="Cerrar la carta">✕</button>
+      <h2 id="carta-titulo"></h2>
+      <img class="carta-imagen" id="carta-imagen" alt="" hidden>
+      <div class="carta-texto" id="carta-texto"></div>
+      <nav class="carta-nav" aria-label="Navegación entre cartas">
+        <button id="anterior" type="button">← Anterior</button>
+        <span id="carta-indice" aria-live="polite"></span>
+        <button id="siguiente" type="button">Siguiente →</button>
+      </nav>
+    </article>
+  </div>
+
+  <script src="js/cartas.js"></script>
+</body>
+</html>

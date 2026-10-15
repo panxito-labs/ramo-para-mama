@@ -1,0 +1,17 @@
+ACÁ VAN LAS IMÁGENES DE LAS CARTAS
+==================================
+
+Guardá cada imagen con este nombre exacto:
+
+  imagencarta1.png   -> imagen de la carta 1
+  imagencarta2.png   -> imagen de la carta 2
+  imagencarta3.png   -> imagen de la carta 3
+
+Si todavía no hay imagen, o el nombre no coincide, la carta se abre
+igual y simplemente no muestra foto. No se rompe nada.
+
+Tip: las imágenes se ven mejor si no son demasiado grandes (unas
+1200 px de ancho como máximo) y en formato .png o .jpg.
+
+Si usás .jpg, cambialo en js/cartas.js en el campo "imagen"
+(por ejemplo: imagen: "img/imagencarta1.jpg").
