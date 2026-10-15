@@ -10,21 +10,34 @@
   --papel: #fffaf0;
   --borde-papel: #e6d5bd;
   --texto-claro: #e9cfc7;
+
+  /* Fondo de la página, compartido entre html y body para que no se vea
+     blanco arriba/abajo en el celular (overscroll y barra del navegador). */
+  --fondo-pagina:
+    radial-gradient(1000px 520px at 50% -8%, rgba(224, 87, 111, 0.22), transparent 62%),
+    radial-gradient(760px 460px at 8% 108%, rgba(155, 120, 214, 0.16), transparent 58%),
+    radial-gradient(760px 460px at 92% 108%, rgba(244, 196, 69, 0.10), transparent 55%),
+    linear-gradient(180deg, #2a1a24 0%, #3a2130 55%, #2f1c28 100%);
 }
 
 * { box-sizing: border-box; }
+
+/* Color de seguridad en html: evita que se vea blanco en los bordes
+   del celular (overscroll y barra del navegador). */
+html {
+  min-height: 100%;
+  background-color: #2a1a24;
+}
 
 html, body { margin: 0; padding: 0; }
 
 body {
   min-height: 100vh;
+  min-height: 100dvh; /* alto real descontando la barra del navegador */
   font-family: Georgia, 'Times New Roman', serif;
   color: var(--texto-claro);
-  background:
-    radial-gradient(1000px 520px at 50% -8%, rgba(224, 87, 111, 0.22), transparent 62%),
-    radial-gradient(760px 460px at 8% 108%, rgba(155, 120, 214, 0.16), transparent 58%),
-    radial-gradient(760px 460px at 92% 108%, rgba(244, 196, 69, 0.10), transparent 55%),
-    linear-gradient(180deg, #2a1a24 0%, #3a2130 55%, #2f1c28 100%);
+  background: var(--fondo-pagina);
+  background-color: #2a1a24;
   overflow-x: hidden;
 }
 
