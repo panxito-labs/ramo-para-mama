@@ -249,6 +249,10 @@ body {
 
 .fondo-carta.visible { opacity: 1; }
 
+/* Sin esto, el display:grid de arriba anula el atributo hidden y el fondo
+   invisible se come los toques de los sobres. */
+.fondo-carta[hidden] { display: none; }
+
 .carta {
   position: relative;
   width: min(94vw, 600px);

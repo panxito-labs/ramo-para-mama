@@ -18,25 +18,26 @@ const CONFIG = {
 
   cartas: [
     {
-      titulo: "Primera carta",
-      imagen: "img/imagencarta1.png",
+      titulo: "¡MAMII FELIZ DÍA DEL PROFEE! <33",
+      imagen: "img/imagencarta1.jpg",
       texto:
-        "Acá va el texto de la primera carta. ✏️\n\n" +
-        "Reemplazame por lo que quieras decirle. Cada línea en blanco empieza un párrafo nuevo.",
+        "Te amo con todo mi corazón. Nadie como yo (excepto mi hermano y mi papá jeje) sabe la pasión y la entrega que le pones a tu trabajo. Tienes un talento y vocación admirables y hermosos.\n\n" +
+        "Gracias por ser mi mayor ejemplo y mi inspiración cada día. Quiero llegar a ser la mitad de la gran persona y profesional que eres tú. te amo te adoro y te admiro!!",
     },
     {
-      titulo: "Segunda carta",
-      imagen: "img/imagencarta2.png",
+      titulo: "Para mi amada profesora",
+      imagen: "img/imagencarta2.jpg",
       texto:
-        "Acá va el texto de la segunda carta. ✏️\n\n" +
-        "Todavía estoy esperando que me pases los textos lindos 😄",
+        "Porque la educación es reservada sólo para quienes tienen el don.\n\n" +
+        "FELIZ DÍA MI AMADA PROFESORA",
     },
     {
-      titulo: "Tercera carta",
-      imagen: "img/imagencarta3.png",
+      titulo: "Feliz día, profesora mami",
+      imagen: "img/imagencarta3.jpg",
       texto:
-        "Acá va el texto de la tercera carta. ✏️\n\n" +
-        "Mandame los textos cuando quieras y los dejo escritos acá.",
+        "Solo quería decirte lo mucho que me inspiras todos los días. Eres demasiado bakán en lo que haces y la pasión que le pones a tu trabajo se nota a kilómetros.\n\n" +
+        "Al punto que si tú te vas de ese liceo se cae a pedazos, eres como el titán Atlas pero que sosteniendo todo el colegio sobre tus hombros.\n\n" +
+        "Profesoras con tu vocación y entrega valen oro. Te quiero mucho y te mereces la mejor celebración.",
     },
   ],
 };
